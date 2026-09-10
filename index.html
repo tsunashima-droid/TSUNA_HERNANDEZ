@@ -1,0 +1,82 @@
+Arquivo index.html
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Site na Nuvem</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #f5f7fa;
+            color: #1a1a2e;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #0f3460;
+            border-bottom: 3px solid #e94560;
+            padding-bottom: 10px;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .badge {
+            display: inline-block;
+            background: #e94560;
+            color: #fff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #888;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Meu Primeiro Site na Nuvem ☁️</h1>
+
+    <p>Esta página foi hospedada com <strong>GitHub Pages</strong> — um serviço de nuvem gratuito.</p>
+
+    <div class="card">
+        <span class="badge">Exercício 1</span>
+        <h2>Sobre mim</h2>
+        <p>Escreva aqui uma breve apresentação. Exemplo: "Sou aluno(a) de automação e este é meu primeiro site publicado na nuvem."</p>
+    </div>
+
+    <div class="card">
+        <span class="badge">O que aprendi</span>
+        <h2>Conceitos de cloud computing</h2>
+        <ul>
+            <li>Hospedagem de site sem servidor próprio</li>
+            <li>URL pública acessível de qualquer lugar</li>
+            <li>Deploy automático a cada atualização</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>Feito com HTML e CSS — publicado em <strong>github.io</strong></p>
+        <p>Data: <span id="data"></span></p>
+    </footer>
+
+    <script>
+        // Exibe a data atual automaticamente
+        document.getElementById("data").textContent =
+            new Date().toLocaleDateString("pt-BR");
+    </script>
+
+</body>
+</html>
